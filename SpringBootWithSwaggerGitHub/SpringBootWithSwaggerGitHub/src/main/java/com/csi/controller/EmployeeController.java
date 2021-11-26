@@ -33,5 +33,10 @@ public class EmployeeController {
         return ResponseEntity.ok(employeeService.getDataByUsingAnyInput(employee));
     }
 
+    @PostMapping("/hello")
+    public String sayHello()
+    {
+        return "welcome";
+    }
 }
 
